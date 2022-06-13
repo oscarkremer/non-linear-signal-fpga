@@ -16,6 +16,7 @@ print ("Blinking LED["+str(led)+"]")
 period = 1 # seconds
 
 while 1:
+    print('')
     time.sleep(period/2.0)
     rp_s.tx_txt('DIG:PIN LED' + str(led) + ',' + str(1))
     time.sleep(period/2.0)
